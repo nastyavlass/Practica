@@ -36,6 +36,7 @@ namespace WinAsynchMethod
             this.txbA = new System.Windows.Forms.TextBox();
             this.txbB = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRun
@@ -98,11 +99,26 @@ namespace WinAsynchMethod
             this.txbB.Size = new System.Drawing.Size(100, 22);
             this.txbB.TabIndex = 5;
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\анастасия\\Desktop\\ПрактикаПМ01!\\Practica\\WinAsynchMethod\\EEE.docx";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(296, 89);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "help";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 153);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txbB);
             this.Controls.Add(this.txbA);
             this.Controls.Add(this.lblB);
@@ -115,6 +131,7 @@ namespace WinAsynchMethod
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Асинхронный запуск";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +146,7 @@ namespace WinAsynchMethod
         private System.Windows.Forms.TextBox txbA;
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
