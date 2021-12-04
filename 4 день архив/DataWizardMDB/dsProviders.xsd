@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsProviders" targetNamespace="http://www.tempuri.org/dsProviders.xsd" xmlns:mstns="http://www.tempuri.org/dsProviders.xsd" xmlns="http://www.tempuri.org/dsProviders.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsProviders" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Поставщики">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Адрес_x0020_поставщика" type="xs:string" minOccurs="0" />
+              <xs:element name="Код_x0020_поставщика" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Поставщик" type="xs:string" minOccurs="0" />
+              <xs:element name="Телефон" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Товары">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_поставщика" type="xs:int" minOccurs="0" />
+              <xs:element name="Код_x0020_продукта" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Наименование" type="xs:string" minOccurs="0" />
+              <xs:element name="Цена_x002C__x0020__x0024_" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Поставщики" />
+      <xs:field xpath="mstns:Код_x0020_поставщика" />
+    </xs:unique>
+    <xs:unique name="Товары_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Товары" />
+      <xs:field xpath="mstns:Код_x0020_продукта" />
+    </xs:unique>
+    <xs:keyref name="ProvidersProducts" refer="Constraint1">
+      <xs:selector xpath=".//mstns:Товары" />
+      <xs:field xpath="mstns:Код_x0020_поставщика" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

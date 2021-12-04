@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindings", "DataBindings.csproj", "{6598E7A5-A3A3-4BA3-AEE4-BF10E42463CD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6598E7A5-A3A3-4BA3-AEE4-BF10E42463CD}.Debug.ActiveCfg = Debug|.NET
+		{6598E7A5-A3A3-4BA3-AEE4-BF10E42463CD}.Debug.Build.0 = Debug|.NET
+		{6598E7A5-A3A3-4BA3-AEE4-BF10E42463CD}.Release.ActiveCfg = Release|.NET
+		{6598E7A5-A3A3-4BA3-AEE4-BF10E42463CD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
