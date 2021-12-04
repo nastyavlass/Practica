@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualDataMDB", "VisualDataMDB.csproj", "{9F40A235-87B4-4B2D-86B1-F94D3320E4D5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9F40A235-87B4-4B2D-86B1-F94D3320E4D5}.Debug.ActiveCfg = Debug|.NET
+		{9F40A235-87B4-4B2D-86B1-F94D3320E4D5}.Debug.Build.0 = Debug|.NET
+		{9F40A235-87B4-4B2D-86B1-F94D3320E4D5}.Release.ActiveCfg = Release|.NET
+		{9F40A235-87B4-4B2D-86B1-F94D3320E4D5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
