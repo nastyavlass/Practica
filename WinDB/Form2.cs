@@ -16,15 +16,24 @@ namespace WinDB
         {
             InitializeComponent();
         }
-
+        DataView ПоставщикиView;
         private void button1_Click(object sender, EventArgs e)
         {
-            oleDbDataAdapter1.Fill(rbProductDataSet1.Поставщики);
+            поставщикиTableAdapter1.Fill(rbProductDataSet1.Поставщики);
+            ПоставщикиView = new DataView(rbProductDataSet1.Поставщики);
+            dataGridView1.DataSource = ПоставщикиView;
+            ПоставщикиView.Sort = "Поставщик";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             oleDbDataAdapter1.Update(rbProductDataSet1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ПоставщикиView.Sort = SortTextBox.Text;
+            ПоставщикиView.RowFilter = FilterTextBox.Text;
         }
     }
 }
