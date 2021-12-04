@@ -171,7 +171,7 @@
   <xs:element name="RBProductDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RBProductDataSet" msprop:Generator_UserDSName="RBProductDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Поставщики" msprop:Generator_TableClassName="ПоставщикиDataTable" msprop:Generator_TableVarName="tableПоставщики" msprop:Generator_TablePropName="Поставщики" msprop:Generator_RowDeletingName="ПоставщикиRowDeleting" msprop:Generator_RowChangingName="ПоставщикиRowChanging" msprop:Generator_RowEvHandlerName="ПоставщикиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставщикиRowDeleted" msprop:Generator_UserTableName="Поставщики" msprop:Generator_RowChangedName="ПоставщикиRowChanged" msprop:Generator_RowEvArgName="ПоставщикиRowChangeEvent" msprop:Generator_RowClassName="ПоставщикиRow">
+        <xs:element name="Поставщики" msprop:Generator_TableClassName="ПоставщикиDataTable" msprop:Generator_TableVarName="tableПоставщики" msprop:Generator_RowChangedName="ПоставщикиRowChanged" msprop:Generator_TablePropName="Поставщики" msprop:Generator_RowDeletingName="ПоставщикиRowDeleting" msprop:Generator_RowChangingName="ПоставщикиRowChanging" msprop:Generator_RowEvHandlerName="ПоставщикиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставщикиRowDeleted" msprop:Generator_RowClassName="ПоставщикиRow" msprop:Generator_UserTableName="Поставщики" msprop:Generator_RowEvArgName="ПоставщикиRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_x0020_поставщика" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_поставщика" msprop:Generator_ColumnPropNameInRow="Код_поставщика" msprop:Generator_ColumnPropNameInTable="Код_поставщикаColumn" msprop:Generator_UserColumnName="Код поставщика" type="xs:int" />
@@ -199,7 +199,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Поставщики_x0020_и_x0020_товары" msprop:Generator_TableClassName="Поставщики_и_товарыDataTable" msprop:Generator_TableVarName="tableПоставщики_и_товары" msprop:Generator_TablePropName="Поставщики_и_товары" msprop:Generator_RowDeletingName="Поставщики_и_товарыRowDeleting" msprop:Generator_RowChangingName="Поставщики_и_товарыRowChanging" msprop:Generator_RowEvHandlerName="Поставщики_и_товарыRowChangeEventHandler" msprop:Generator_RowDeletedName="Поставщики_и_товарыRowDeleted" msprop:Generator_UserTableName="Поставщики и товары" msprop:Generator_RowChangedName="Поставщики_и_товарыRowChanged" msprop:Generator_RowEvArgName="Поставщики_и_товарыRowChangeEvent" msprop:Generator_RowClassName="Поставщики_и_товарыRow">
+        <xs:element name="Поставщики_x0020_и_x0020_товары" msprop:Generator_TableClassName="Поставщики_и_товарыDataTable" msprop:Generator_TableVarName="tableПоставщики_и_товары" msprop:Generator_RowChangedName="Поставщики_и_товарыRowChanged" msprop:Generator_TablePropName="Поставщики_и_товары" msprop:Generator_RowDeletingName="Поставщики_и_товарыRowDeleting" msprop:Generator_RowChangingName="Поставщики_и_товарыRowChanging" msprop:Generator_RowEvHandlerName="Поставщики_и_товарыRowChangeEventHandler" msprop:Generator_RowDeletedName="Поставщики_и_товарыRowDeleted" msprop:Generator_RowClassName="Поставщики_и_товарыRow" msprop:Generator_UserTableName="Поставщики и товары" msprop:Generator_RowEvArgName="Поставщики_и_товарыRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_x0020_поставщика" msprop:Generator_ColumnVarNameInTable="columnКод_поставщика" msprop:Generator_ColumnPropNameInRow="Код_поставщика" msprop:Generator_ColumnPropNameInTable="Код_поставщикаColumn" msprop:Generator_UserColumnName="Код поставщика" type="xs:int" minOccurs="0" />
@@ -236,7 +236,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Товары" msprop:Generator_TableClassName="ТоварыDataTable" msprop:Generator_TableVarName="tableТовары" msprop:Generator_TablePropName="Товары" msprop:Generator_RowDeletingName="ТоварыRowDeleting" msprop:Generator_RowChangingName="ТоварыRowChanging" msprop:Generator_RowEvHandlerName="ТоварыRowChangeEventHandler" msprop:Generator_RowDeletedName="ТоварыRowDeleted" msprop:Generator_UserTableName="Товары" msprop:Generator_RowChangedName="ТоварыRowChanged" msprop:Generator_RowEvArgName="ТоварыRowChangeEvent" msprop:Generator_RowClassName="ТоварыRow">
+        <xs:element name="Товары" msprop:Generator_TableClassName="ТоварыDataTable" msprop:Generator_TableVarName="tableТовары" msprop:Generator_RowChangedName="ТоварыRowChanged" msprop:Generator_TablePropName="Товары" msprop:Generator_RowDeletingName="ТоварыRowDeleting" msprop:Generator_RowChangingName="ТоварыRowChanging" msprop:Generator_RowEvHandlerName="ТоварыRowChangeEventHandler" msprop:Generator_RowDeletedName="ТоварыRowDeleted" msprop:Generator_RowClassName="ТоварыRow" msprop:Generator_UserTableName="Товары" msprop:Generator_RowEvArgName="ТоварыRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_x0020_продукта" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_продукта" msprop:Generator_ColumnPropNameInRow="Код_продукта" msprop:Generator_ColumnPropNameInTable="Код_продуктаColumn" msprop:Generator_UserColumnName="Код продукта" type="xs:int" />
@@ -271,7 +271,7 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="ПоставщикиТовары" msdata:parent="Поставщики" msdata:child="Товары" msdata:parentkey="Код_x0020_поставщика" msdata:childkey="Код_x0020_поставщика" msprop:Generator_UserChildTable="Товары" msprop:Generator_ChildPropName="GetТоварыRows" msprop:Generator_UserRelationName="ПоставщикиТовары" msprop:Generator_ParentPropName="ПоставщикиRow" msprop:Generator_RelationVarName="relationПоставщикиТовары" msprop:Generator_UserParentTable="Поставщики" />
+      <msdata:Relationship name="ПоставщикиТовары" msdata:parent="Поставщики" msdata:child="Товары" msdata:parentkey="Код_x0020_поставщика" msdata:childkey="Код_x0020_поставщика" msprop:Generator_UserChildTable="Товары" msprop:Generator_ChildPropName="GetТоварыRows" msprop:Generator_UserRelationName="ПоставщикиТовары" msprop:Generator_RelationVarName="relationПоставщикиТовары" msprop:Generator_UserParentTable="Поставщики" msprop:Generator_ParentPropName="ПоставщикиRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
