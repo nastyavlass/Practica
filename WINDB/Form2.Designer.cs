@@ -53,10 +53,13 @@ namespace WINDB
             this.поставщикиTableAdapter1 = new WINDB.RBProductDataSet1TableAdapters.ПоставщикиTableAdapter();
             this.rbProductDataSet11 = new WINDB.RBProductDataSet1();
             this.button3 = new System.Windows.Forms.Button();
+            this.rbProductDataSet12 = new WINDB.RBProductDataSet1();
+            this.товарыTableAdapter1 = new WINDB.RBProductDataSet1TableAdapters.ТоварыTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet12)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -254,6 +257,15 @@ namespace WINDB
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // rbProductDataSet12
+            // 
+            this.rbProductDataSet12.DataSetName = "RBProductDataSet1";
+            this.rbProductDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // товарыTableAdapter1
+            // 
+            this.товарыTableAdapter1.ClearBeforeFill = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -273,6 +285,7 @@ namespace WINDB
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,5 +315,7 @@ namespace WINDB
         private RBProductDataSet1TableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
         private RBProductDataSet1 rbProductDataSet11;
         private System.Windows.Forms.Button button3;
+        private RBProductDataSet1 rbProductDataSet12;
+        private RBProductDataSet1TableAdapters.ТоварыTableAdapter товарыTableAdapter1;
     }
 }
