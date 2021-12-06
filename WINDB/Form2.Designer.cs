@@ -1,5 +1,5 @@
 ﻿
-namespace WinDB
+namespace WINDB
 {
     partial class Form2
     {
@@ -43,22 +43,23 @@ namespace WinDB
             this.label2 = new System.Windows.Forms.Label();
             this.SortTextBox = new System.Windows.Forms.TextBox();
             this.FilterTextBox = new System.Windows.Forms.TextBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.rBProductDataSet11 = new WinDB.RBProductDataSet1();
-            this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.кодПоставщикаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.поставщикDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.адресПоставщикаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.телефонDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rbProductDataSet1 = new WinDB.RBProductDataSet();
-            this.поставщикиTableAdapter1 = new WinDB.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
-            this.rbProductDataSet2 = new WinDB.RBProductDataSet();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet11)).BeginInit();
+            this.dataSet11 = new WINDB.DataSet1();
+            this.dataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.поставщикиTableAdapter1 = new WINDB.RBProductDataSet1TableAdapters.ПоставщикиTableAdapter();
+            this.rbProductDataSet11 = new WINDB.RBProductDataSet1();
+            this.button3 = new System.Windows.Forms.Button();
+            this.rbProductDataSet12 = new WINDB.RBProductDataSet1();
+            this.товарыTableAdapter1 = new WINDB.RBProductDataSet1TableAdapters.ТоварыTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet12)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -124,20 +125,20 @@ namespace WinDB
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(84, 35);
+            this.button1.Location = new System.Drawing.Point(12, 31);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.Size = new System.Drawing.Size(97, 98);
+            this.button1.TabIndex = 1;
             this.button1.Text = "Get Data";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(263, 35);
+            this.button2.Location = new System.Drawing.Point(173, 31);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
+            this.button2.Size = new System.Drawing.Size(106, 98);
+            this.button2.TabIndex = 2;
             this.button2.Text = "Update Data";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -145,7 +146,7 @@ namespace WinDB
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 83);
+            this.label1.Location = new System.Drawing.Point(80, 193);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 3;
@@ -154,7 +155,7 @@ namespace WinDB
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 83);
+            this.label2.Location = new System.Drawing.Point(319, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 17);
             this.label2.TabIndex = 4;
@@ -162,7 +163,7 @@ namespace WinDB
             // 
             // SortTextBox
             // 
-            this.SortTextBox.Location = new System.Drawing.Point(127, 84);
+            this.SortTextBox.Location = new System.Drawing.Point(83, 223);
             this.SortTextBox.Name = "SortTextBox";
             this.SortTextBox.Size = new System.Drawing.Size(100, 22);
             this.SortTextBox.TabIndex = 5;
@@ -170,32 +171,11 @@ namespace WinDB
             // 
             // FilterTextBox
             // 
-            this.FilterTextBox.Location = new System.Drawing.Point(330, 84);
+            this.FilterTextBox.Location = new System.Drawing.Point(322, 223);
             this.FilterTextBox.Name = "FilterTextBox";
             this.FilterTextBox.Size = new System.Drawing.Size(100, 22);
             this.FilterTextBox.TabIndex = 6;
             this.FilterTextBox.Text = "Телефон=\'123-45-67, 123-45-68\'";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.rBProductDataSet11;
-            this.bindingSource1.Position = 0;
-            // 
-            // rBProductDataSet11
-            // 
-            this.rBProductDataSet11.DataSetName = "RBProductDataSet1";
-            this.rBProductDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button3.Location = new System.Drawing.Point(444, 35);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 64);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Сортировка и фильтрация";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
             // 
@@ -207,14 +187,14 @@ namespace WinDB
             this.адресПоставщикаDataGridViewTextBoxColumn,
             this.телефонDataGridViewTextBoxColumn});
             this.dataGridView1.DataMember = "Поставщики";
-            this.dataGridView1.DataSource = this.rbProductDataSet1;
+            this.dataGridView1.DataSource = this.dataSet11;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 292);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(565, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.Size = new System.Drawing.Size(800, 150);
+            this.dataGridView1.TabIndex = 0;
             // 
             // кодПоставщикаDataGridViewTextBoxColumn
             // 
@@ -248,40 +228,64 @@ namespace WinDB
             this.телефонDataGridViewTextBoxColumn.Name = "телефонDataGridViewTextBoxColumn";
             this.телефонDataGridViewTextBoxColumn.Width = 125;
             // 
-            // rbProductDataSet1
+            // dataSet11
             // 
-            this.rbProductDataSet1.DataSetName = "RBProductDataSet";
-            this.rbProductDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet11BindingSource
+            // 
+            this.dataSet11BindingSource.DataSource = this.dataSet11;
+            this.dataSet11BindingSource.Position = 0;
             // 
             // поставщикиTableAdapter1
             // 
             this.поставщикиTableAdapter1.ClearBeforeFill = true;
             // 
-            // rbProductDataSet2
+            // rbProductDataSet11
             // 
-            this.rbProductDataSet2.DataSetName = "RBProductDataSet";
-            this.rbProductDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.rbProductDataSet11.DataSetName = "RBProductDataSet1";
+            this.rbProductDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(339, 31);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 98);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Сортировка и фильтрация";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // rbProductDataSet12
+            // 
+            this.rbProductDataSet12.DataSetName = "RBProductDataSet1";
+            this.rbProductDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // товарыTableAdapter1
+            // 
+            this.товарыTableAdapter1.ClearBeforeFill = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 282);
+            this.ClientSize = new System.Drawing.Size(800, 442);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.FilterTextBox);
             this.Controls.Add(this.SortTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,22 +299,23 @@ namespace WinDB
         private System.Data.OleDb.OleDbCommand oleDbUpdateCommand1;
         private System.Data.OleDb.OleDbCommand oleDbDeleteCommand1;
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
-        private RBProductDataSet rbProductDataSet1;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодПоставщикаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn поставщикDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn адресПоставщикаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn телефонDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox SortTextBox;
         private System.Windows.Forms.TextBox FilterTextBox;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private RBProductDataSet1 rBProductDataSet11;
-        private RBProductDataSetTableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
-        private RBProductDataSet rbProductDataSet2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кодПоставщикаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn поставщикDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn адресПоставщикаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn телефонDataGridViewTextBoxColumn;
+        private DataSet1 dataSet11;
+        private System.Windows.Forms.BindingSource dataSet11BindingSource;
+        private RBProductDataSet1TableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
+        private RBProductDataSet1 rbProductDataSet11;
         private System.Windows.Forms.Button button3;
+        private RBProductDataSet1 rbProductDataSet12;
+        private RBProductDataSet1TableAdapters.ТоварыTableAdapter товарыTableAdapter1;
     }
 }

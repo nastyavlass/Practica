@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WinDB {
+namespace WINDB {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace WinDB {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("RBProductDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("RBProductDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class RBProductDataSet1 : global::System.Data.DataSet {
+    public partial class RBProductDataSet : global::System.Data.DataSet {
         
         private ПоставщикиDataTable tableПоставщики;
         
@@ -30,7 +30,7 @@ namespace WinDB {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public RBProductDataSet1() {
+        public RBProductDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace WinDB {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected RBProductDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected RBProductDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace WinDB {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            RBProductDataSet1 cln = ((RBProductDataSet1)(base.Clone()));
+            RBProductDataSet cln = ((RBProductDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace WinDB {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "RBProductDataSet1";
+            this.DataSetName = "RBProductDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/RBProductDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/RBProductDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableПоставщики = new ПоставщикиDataTable();
@@ -225,7 +225,7 @@ namespace WinDB {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            RBProductDataSet1 ds = new RBProductDataSet1();
+            RBProductDataSet ds = new RBProductDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -519,7 +519,7 @@ namespace WinDB {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                RBProductDataSet1 ds = new RBProductDataSet1();
+                RBProductDataSet ds = new RBProductDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -723,7 +723,7 @@ namespace WinDB {
         }
     }
 }
-namespace WinDB.RBProductDataSet1TableAdapters {
+namespace WINDB.RBProductDataSetTableAdapters {
     
     
     /// <summary>
@@ -894,7 +894,7 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::WinDB.Properties.Settings.Default.RBProductConnectionString;
+            this._connection.ConnectionString = global::WINDB.Properties.Settings.Default.RBProductConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -911,7 +911,7 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(RBProductDataSet1.ПоставщикиDataTable dataTable) {
+        public virtual int Fill(RBProductDataSet.ПоставщикиDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -924,9 +924,9 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual RBProductDataSet1.ПоставщикиDataTable GetData() {
+        public virtual RBProductDataSet.ПоставщикиDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            RBProductDataSet1.ПоставщикиDataTable dataTable = new RBProductDataSet1.ПоставщикиDataTable();
+            RBProductDataSet.ПоставщикиDataTable dataTable = new RBProductDataSet.ПоставщикиDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -934,14 +934,14 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(RBProductDataSet1.ПоставщикиDataTable dataTable) {
+        public virtual int Update(RBProductDataSet.ПоставщикиDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(RBProductDataSet1 dataSet) {
+        public virtual int Update(RBProductDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Поставщики");
         }
         
@@ -1201,7 +1201,7 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(RBProductDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(RBProductDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._поставщикиTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Поставщики.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1220,7 +1220,7 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(RBProductDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(RBProductDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._поставщикиTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Поставщики.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1238,7 +1238,7 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(RBProductDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(RBProductDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._поставщикиTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Поставщики.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1280,7 +1280,7 @@ namespace WinDB.RBProductDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(RBProductDataSet1 dataSet) {
+        public virtual int UpdateAll(RBProductDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

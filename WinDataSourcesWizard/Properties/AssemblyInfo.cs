@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("WINDB")]
+[assembly: AssemblyTitle("WinDataSourcesWizard")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WINDB")]
+[assembly: AssemblyProduct("WinDataSourcesWizard")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("6bcb585b-d767-4328-b20f-73f3459b12a5")]
+[assembly: Guid("1a4f2180-1c87-40bf-9de1-63ca1817c7d5")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

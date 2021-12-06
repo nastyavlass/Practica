@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="RBProductDataSet1" targetNamespace="http://tempuri.org/RBProductDataSet1.xsd" xmlns:mstns="http://tempuri.org/RBProductDataSet1.xsd" xmlns="http://tempuri.org/RBProductDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="RBProductDataSet" targetNamespace="http://tempuri.org/RBProductDataSet.xsd" xmlns:mstns="http://tempuri.org/RBProductDataSet.xsd" xmlns="http://tempuri.org/RBProductDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="RBProductConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RBProductConnectionString (Settings)" PropertyReference="ApplicationSettings.WinDB.Properties.Settings.GlobalReference.Default.RBProductConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="RBProductConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RBProductConnectionString (Settings)" PropertyReference="ApplicationSettings.WINDB.Properties.Settings.GlobalReference.Default.RBProductConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПоставщикиTableAdapter" GeneratorDataComponentClassName="ПоставщикиTableAdapter" Name="Поставщики" UserDataComponentName="ПоставщикиTableAdapter">
@@ -72,7 +72,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="RBProductDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RBProductDataSet1" msprop:Generator_UserDSName="RBProductDataSet1">
+  <xs:element name="RBProductDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RBProductDataSet" msprop:Generator_UserDSName="RBProductDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Поставщики" msprop:Generator_TableClassName="ПоставщикиDataTable" msprop:Generator_TableVarName="tableПоставщики" msprop:Generator_TablePropName="Поставщики" msprop:Generator_RowDeletingName="ПоставщикиRowDeleting" msprop:Generator_RowChangingName="ПоставщикиRowChanging" msprop:Generator_RowEvHandlerName="ПоставщикиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставщикиRowDeleted" msprop:Generator_UserTableName="Поставщики" msprop:Generator_RowChangedName="ПоставщикиRowChanged" msprop:Generator_RowEvArgName="ПоставщикиRowChangeEvent" msprop:Generator_RowClassName="ПоставщикиRow">

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinDB
+namespace WINDB
 {
     public partial class Form2 : Form
     {
@@ -19,15 +19,15 @@ namespace WinDB
         DataView ПоставщикиView;
         private void button1_Click(object sender, EventArgs e)
         {
-            поставщикиTableAdapter1.Fill(rbProductDataSet1.Поставщики);
-            ПоставщикиView = new DataView(rbProductDataSet1.Поставщики);
+            поставщикиTableAdapter1.Fill(rbProductDataSet11.Поставщики);
+            ПоставщикиView = new DataView(rbProductDataSet11.Поставщики);
             dataGridView1.DataSource = ПоставщикиView;
             ПоставщикиView.Sort = "Поставщик";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            oleDbDataAdapter1.Update(rbProductDataSet1);
+            oleDbDataAdapter1.Update(dataSet11);
         }
 
         private void button3_Click(object sender, EventArgs e)

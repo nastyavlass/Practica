@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WINDB.Properties {
+namespace WinDataSourcesWizard.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,7 +26,8 @@ namespace WINDB.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\RBProduct.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\анастасия\\Desktop\\ПрактикаП" +
+            "М01!\\Practica\\WINDB\\RBProduct.mdb")]
         public string RBProductConnectionString {
             get {
                 return ((string)(this["RBProductConnectionString"]));
