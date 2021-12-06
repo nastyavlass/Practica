@@ -31,5 +31,11 @@ namespace WINDB
             myReader.Close();
             oleDbConnection1.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 Excercise2 = new Form2();
+            Excercise2.Show();
+        }
     }
 }
