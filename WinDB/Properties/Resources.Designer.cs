@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace WinDB.Properties
+namespace WINDB.Properties
 {
     /// <summary>
     ///   Класс ресурсов со строгим типом для поиска локализованных строк и пр.
@@ -43,7 +43,7 @@ namespace WinDB.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WinDB.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WINDB.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
